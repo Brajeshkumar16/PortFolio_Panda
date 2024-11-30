@@ -1,0 +1,51 @@
+.memory-section {
+    padding: 5rem 2rem;
+    background: #536976;
+    background: -webkit-linear-gradient(to right, #292e49, #536976);
+    background: linear-gradient(to right, #292e49, #536976);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ffdb4d;
+    margin-bottom: 40px;
+}
+
+
+.memory-grid {
+    column-count: 3;
+    column-gap: 1.5rem;
+}
+
+.memory-item {
+    margin-bottom: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.memory-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.memory-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* .memory-info {
+    padding: 1rem;
+    background: #f4f4f4; 
+    text-align: center;
+  } */
+
+/* .memory-info h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  } */

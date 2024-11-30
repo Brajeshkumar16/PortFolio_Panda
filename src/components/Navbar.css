@@ -1,0 +1,88 @@
+/* Navbar container */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0a1d37, #1f3c66); /* Deep navy blue gradient */
+    z-index: 10;
+    width: 100%;
+    height: 80px; /* Adjusted height for better spacing */
+    position: fixed;
+    top: 0;
+    padding: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Left side of navbar */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    width: 90px; /* Adjusted size for better fit */
+    height: auto;
+}
+
+.title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem; /* Adjusted font size */
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: rgb(247, 234, 163); /* Hover effect */
+}
+
+/* Right side of navbar */
+.right {
+    display: flex;
+    gap: 1.5rem; /* Increased gap between items */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 2rem; /* Padding to ensure no cutoff */
+}
+
+.right div {
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    padding: 8px 16px;
+    transition: color 0.3s ease-in-out;
+    white-space: nowrap; /* Prevents text from wrapping */
+    border-radius: 4px; /* Adds rounded corners for better design */
+}
+
+.right div:hover {
+    color: rgb(8, 170, 239); /* Hover effect */
+    background-color: rgba(243, 190, 0, 0.1); /* Subtle background color change on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .content {
+        padding: 0 10px; /* Reduced padding for smaller screens */
+        height: 70px; /* Slightly reduced height */
+    }
+
+    .right {
+        gap: 1rem; /* Reduced gap for smaller screens */
+    }
+
+    .right div {
+        font-size: 1rem; /* Reduced font size */
+        padding: 6px 12px; /* Adjusted padding */
+    }
+
+    .left img {
+        width: 80px; /* Reduced image size for smaller screens */
+    }
+
+    .title {
+        font-size: 1.1rem; /* Adjusted font size for smaller screens */
+    }
+}
